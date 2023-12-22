@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>special operator</title>
+    </Head>
+
+    <body>
+        <h1>Special Operator</h1>
+
+        <script type="text/JavaScript">
+
+            var a = 10;
+            var b = 20;
+            var c = 10;
+
+            // using '?:' operator 
+            var x = a == c ? "a is equal to c " : "a is not equal to c";
+            document.write(x);
+            document.write("<br>");
+
+            // using ',' operator
+            let y = (1, 2, 3);
+            document.write("Value of y = " + y);
+            document.write("<br>");
+
+            // we have to define an object to perform 'delete' operator
+            var person = {
+                firstname : "Vijay",
+                lastname : "Nagane",
+                age : 20
+            };
+
+            // now using 'delete' operator 
+            delete person.lastname;
+            document.write("Delete lastname from person object = " + person.lastname);
+            document.write("<br>");
+
+            // using 'in' operator
+            var z = 'age' in person ? "True" : "False";
+            document.write("Value of z : " + z);
+            document.write("<br>");
+
+            // using 'instanceof' operator
+            document.write("If person is a instance of prototype model : " + (person instanceof Array));
+            document.write("<br>");
+
+            // we have to create class to create new object
+            class abc
+            {
+
+            }
+
+            // using 'new' operator to create new object
+            var v = new abc();
+
+            // using 'typeof' operator
+            document.write("Type of v = " + (typeof(v)));
+            document.write("<br>");
+
+        </script>
+    </body>
+</html>
